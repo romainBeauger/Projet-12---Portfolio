@@ -63,7 +63,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="relative py-20 bg-gray-50">      
       <div className="container mx-auto px-4 md:px-8">
         <div className="animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-[#0a0e27]">
@@ -110,8 +110,8 @@ function Skills() {
             })}
           </div>
         </div>
-      </div>
-    </section>
+      </div>          
+    </section>    
   )
 }
 
