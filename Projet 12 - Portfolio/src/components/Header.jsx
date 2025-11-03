@@ -13,6 +13,9 @@ export default function Header() {
             <a href="#hero" className="text-white/80 hover:text-white">
               Accueil
             </a>
+            <a href="#skills" className="text-white/80 hover:text-white">
+              Compétences
+            </a>
             <a href="#projects" className="text-white/80 hover:text-white">
               Projets
             </a>
