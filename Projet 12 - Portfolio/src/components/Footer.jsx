@@ -5,9 +5,13 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#0a0e27] text-white py-12">
+    <footer className="relative bg-[#0a0e27] text-white py-12">
+
+         
+
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          
           {/* Copyright */}
           <p className="text-white/70 text-center md:text-left">
             © {currentYear} Romain Beauger. Tous droits réservés.

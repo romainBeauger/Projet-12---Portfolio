@@ -51,24 +51,24 @@ function ProjectModal({ project, onClose }) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto relative transition-all duration-300 ${
+        className={`bg-white rounded-2xl max-w-5xl w-full max-h-[100vh] overflow-y-auto relative transition-all duration-300 ${
           isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
         }`}
       >
         {/* Bouton fermer */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
+          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors cursor-pointer"
         >
           <X size={24} />
         </button>
 
         {/* Carousel d'images */}
-        <div className="relative h-[400px] md:h-[500px] bg-gray-100 rounded-t-2xl overflow-hidden">
+        <div className="relative h-[500px] md:h-[60vh] bg-gray-100 rounded-t-2xl overflow-hidden">
           <img
             src={project.images[currentImageIndex]}
             alt={`${project.title} - ${currentImageIndex + 1}`}
-            className="w-full h-full object-cover transition-opacity duration-300"
+            className="w-full h-full object-contain transition-opacity duration-300"
             key={currentImageIndex}
           />
 
@@ -77,15 +77,15 @@ function ProjectModal({ project, onClose }) {
             <>
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full transition-all hover:scale-110"
+                className="absolute left-4 bottom-1/3 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-gray-500/70 hover:bg-gray-500/90 rounded-full transition-all hover:scale-110 cursor-pointer"
               >
-                <ChevronLeft size={30} />
+                <ChevronLeft size={50} />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full transition-all hover:scale-110"
+                className="absolute right-4 bottom-1/3 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-gray-500/70 hover:bg-gray-500/90 rounded-full transition-all hover:scale-110 cursor-pointer"
               >
-                <ChevronRight size={30} />
+                <ChevronRight size={50} />
               </button>
 
               {/* Indicateurs */}
@@ -96,12 +96,12 @@ function ProjectModal({ project, onClose }) {
                     onClick={() => setCurrentImageIndex(index)}
                     className={`h-2 rounded-full transition-all ${
                       index === currentImageIndex
-                        ? 'w-8 bg-white'
-                        : 'w-2 bg-white/50'
+                        ? 'w-8 bg-slate-400'
+                        : 'w-2 bg-slate-400'
                     }`}
                   />
                 ))}
-              </div>
+              </div>div
             </>
           )}
         </div>

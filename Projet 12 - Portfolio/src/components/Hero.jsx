@@ -12,7 +12,7 @@ function Hero() {
           {/* texte */}
           <div className="text-white">
             <h1 className="text-6-xl md:text-7xl font-thin mb-6 animate-fade-in">
-              Welcome.
+              Bienvenue.
             </h1>
 
             <p className="text-6-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mb-8 ">

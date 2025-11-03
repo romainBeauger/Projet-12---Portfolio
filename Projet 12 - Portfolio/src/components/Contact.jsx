@@ -54,10 +54,14 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="relative py-20 bg-gray-50">
+
+      
+      
+
       <div className="container mx-auto px-4 md:px-8">
         <div className="animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary-dark">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-10 text-primary-dark">
             Contactez-moi
           </h2>
           <p className="text-center text-gray-600 text-lg mb-12">
@@ -99,7 +103,7 @@ function Contact() {
             </div>
 
             {/* Formulaire */}
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4 mb-10">
               <div>
                 <input
                   type="text"
@@ -168,7 +172,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary-dark text-white font-semibold rounded-lg hover:bg-primary transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary-dark text-white font-semibold rounded-lg hover:bg-primary transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
               >
                 {isSubmitting ? (
                   'Envoi en cours...'
@@ -182,6 +186,16 @@ function Contact() {
             </form>
           </div>
         </div>
+      </div>
+
+      {/* Séparateur arrondi */}
+      <div className="absolute bottom-0 left-0 w-full ">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path
+            fill="#0d0b27"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          />
+        </svg>
       </div>
     </section>
   )
