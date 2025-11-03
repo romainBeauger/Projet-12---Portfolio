@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section 
       id='projects'
-      className='relative py-20 bg-gradient-to-br from-[#0a0e27] to-[#1a1d3a]'
+      className='relative py-20 bg-linear-to-br from-primary-dark to-primary'
     >
       {/* Séparateur arrondi en HAUT - vient de Skills */}
       <div className="absolute top-0 left-0 w-full -mt-10">

@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-gradient-to-br from-[#0a0e27] to-[#1a1d3a] flex items-center overflow-hidden"
+      className="relative min-h-screen bg-linear-to-br from-primary-dark to-primary flex items-center overflow-hidden"
     >
       <div className="container mx-auto px-4 md:px-8">
          <div className="grid md:grid-cols-2 gap-12 items-center py-20">
@@ -24,13 +24,13 @@ function Hero() {
             <div className="flex flex-wrap gap-4">
               <a 
                 href="#project"
-                className="px-8 py-3 bg-[#3b82f6] hover:bg-[#60a5fa] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-3 bg-accent-blue hover:bg-[#60a5fa] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Voir mes projets
               </a>
               <a
                 href="#contact"
-                className="px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-[#0a0e27] font-semibold rounded-lg transition-all duration-300"
+                className="px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-primary-dark font-semibold rounded-lg transition-all duration-300"
               >
                 Me contacter
               </a>               

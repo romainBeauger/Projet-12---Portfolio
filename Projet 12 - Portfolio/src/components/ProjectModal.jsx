@@ -23,7 +23,7 @@ function ProjectModal({ project, onClose }) {
       window.removeEventListener('keydown', handleEscape)
       document.body.style.overflow = 'unset'
     }
-  }, [])
+  })
 
   const handleClose = () => {
     setIsVisible(false)
@@ -51,7 +51,7 @@ function ProjectModal({ project, onClose }) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white rounded-2xl max-w-5xl w-full max-h-[100vh] overflow-y-auto relative transition-all duration-300 ${
+        className={`bg-white rounded-2xl max-w-5xl w-full max-h-screen overflow-y-auto relative transition-all duration-300 ${
           isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
         }`}
       >
@@ -108,7 +108,7 @@ function ProjectModal({ project, onClose }) {
 
         {/* Informations */}
         <div className="p-6 md:p-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#0a0e27]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary-dark">
             {project.title}
           </h2>
           <p className="text-gray-500 mb-6">{project.date}</p>
@@ -119,7 +119,7 @@ function ProjectModal({ project, onClose }) {
 
           {/* Technologies */}
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-3 text-[#0a0e27]">
+            <h3 className="text-xl font-semibold mb-3 text-primary-dark">
               Technologies utilisées
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -140,7 +140,7 @@ function ProjectModal({ project, onClose }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-[#0a0e27] text-[#0a0e27] hover:bg-[#0a0e27] hover:text-white font-semibold rounded-lg transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-white font-semibold rounded-lg transition-all duration-300"
             >
               <Github size={20} />
               Voir sur GitHub
@@ -150,7 +150,7 @@ function ProjectModal({ project, onClose }) {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 bg-[#0a0e27] text-white hover:bg-[#1a1d3a] font-semibold rounded-lg transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 bg-primary-dark text-white hover:bg-primary font-semibold rounded-lg transition-all duration-300"
               >
                 <ExternalLink size={20} />
                 Voir la démo

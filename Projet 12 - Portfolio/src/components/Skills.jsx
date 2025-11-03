@@ -66,7 +66,7 @@ function Skills() {
     <section id="skills" className="relative py-20 bg-gray-50">      
       <div className="container mx-auto px-4 md:px-8">
         <div className="animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-[#0a0e27]">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary-dark">
             Mes Compétences
           </h2>
           <p className="text-center text-gray-600 text-lg mb-12">
@@ -90,7 +90,7 @@ function Skills() {
                     />
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-center mb-4 text-[#0a0e27]">
+                  <h3 className="text-xl font-semibold text-center mb-4 text-primary-dark">
                     {skill.name}
                   </h3>
                   
