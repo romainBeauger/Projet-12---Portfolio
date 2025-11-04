@@ -1,4 +1,3 @@
-// Skills.jsx - Version avec Sass et Bootstrap ajoutés
 import { 
   SiHtml5, 
   SiCss3, 
@@ -32,13 +31,13 @@ const skills = [
   { 
     name: 'Bootstrap', 
     icon: SiBootstrap, 
-    level: 85,
+    level: 75,
     color: '#7952B3' // Violet Bootstrap
   },
   { 
     name: 'Tailwind CSS', 
     icon: SiTailwindcss, 
-    level: 90,
+    level: 85,
     color: '#06B6D4' // Cyan Tailwind
   },
   { 
@@ -48,15 +47,15 @@ const skills = [
     color: '#F7DF1E' // Jaune JavaScript
   },
   { 
-    name: 'React', 
+    name: 'React / Redux', 
     icon: SiReact, 
-    level: 85,
+    level: 80,
     color: '#61DAFB' // Cyan React
   },  
   { 
     name: 'GitHub', 
     icon: SiGithub, 
-    level: 70,
+    level: 75,
     color: '#181717' // Noir GitHub
   }
 ]

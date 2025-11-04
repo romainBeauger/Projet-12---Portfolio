@@ -1,4 +1,3 @@
-// ProjectModal.jsx - Version SANS framer-motion
 import { useState, useEffect } from 'react'
 import { X, ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react'
 

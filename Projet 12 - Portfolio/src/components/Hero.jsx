@@ -1,6 +1,3 @@
-// Hero.jsx - Version SANS framer-motion (ça marche tout de suite)
-// Vous pourrez ajouter les animations plus tard
-
 function Hero() {
   return (
     <section
@@ -42,7 +39,7 @@ function Hero() {
           <img 
             src="/images/laptop-3d.png" 
             alt="Developer workspace" 
-            className="w-full max-w-lg mx-auto animate-float drop-shadow-2xl"
+            className="w-full max-w-lg mx-auto animate-float drop-shadow-2xl rounded-4xl"
           />
           </div>
         </div>

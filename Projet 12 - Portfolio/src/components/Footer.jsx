@@ -1,4 +1,3 @@
-// Footer.jsx - Version 100% Tailwind CSS
 import { Github, Linkedin, Mail } from 'lucide-react'
 
 function Footer() {
