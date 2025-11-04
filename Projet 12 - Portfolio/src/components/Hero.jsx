@@ -37,7 +37,7 @@ function Hero() {
           {/* Image */}
           <div className="hidden md:block">
           <img 
-            src="/images/laptop-3d.png" 
+            src={`${import.meta.env.BASE_URL}images/laptop-3d.png`} 
             alt="Developer workspace" 
             className="w-full max-w-lg mx-auto animate-float drop-shadow-2xl rounded-4xl"
           />

@@ -12,7 +12,7 @@ export default function ProjectCard({project, index, onClick}) {
       {/* Image du projet */}
       <div className="relative h-64 overflow-hidden">
         <img 
-          src={project.images[0]} 
+          src={`${import.meta.env.BASE_URL}${project.images[0]}`}
           alt={project.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />

@@ -65,7 +65,7 @@ function ProjectModal({ project, onClose }) {
         {/* Carousel d'images */}
         <div className="relative h-[500px] md:h-[60vh] bg-gray-100 rounded-t-2xl overflow-hidden">
           <img
-            src={project.images[currentImageIndex]}
+            src={`${import.meta.env.BASE_URL}${project.images[currentImageIndex]}`}
             alt={`${project.title} - ${currentImageIndex + 1}`}
             className="w-full h-full object-contain transition-opacity duration-300"
             key={currentImageIndex}
