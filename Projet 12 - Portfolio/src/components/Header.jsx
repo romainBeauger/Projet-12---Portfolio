@@ -4,12 +4,12 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="text-white text-2xl font-bold">
+          <div className="text-white text-5xl font-bold font-['Pacifico']">
             Mon Portfolio
           </div>
 
           {/* Navigation simple */}
-          <nav className="flex space-x-8">
+          <nav className="flex space-x-8 ">
             <a href="#hero" className="text-white/80 hover:text-white">
               Accueil
             </a>

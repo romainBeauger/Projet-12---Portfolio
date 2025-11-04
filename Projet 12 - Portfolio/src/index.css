@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
 @theme {
   --color-primary-dark: #0a0e27;
   --color-primary: #1a1d3a;
   --color-accent-blue: #3b82f6;
+
+  --font-family-heading: 'Leckerli One', sans-serif;
 }
 
 /* Animation float pour l'image */
